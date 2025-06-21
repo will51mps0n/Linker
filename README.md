@@ -1,12 +1,12 @@
-# LC-2K Linker
+# Linker
 
-This project implements a **multi-file linker** for the LC-2K architecture. The linker combines multiple object files into a single machine code program, resolving label references, adjusting for relocation, and validating symbol tables. It mirrors the behavior of traditional linkers in low-level systems.
+This project implements a **multi-file linker** for a simulated architecture. The linker combines multiple object files into a single machine code program, resolving label references, adjusting for relocation, and validating symbol tables. It mirrors the behavior of traditional linkers in low-level systems.
 
 ---
 
 ## Features
 
-- Parses `.obj` files containing LC-2K sections (text, data, symbol table, relocation table)
+- Parses `.obj` files containing sections (text, data, symbol table, relocation table)
 - Resolves global and local labels across files
 - Applies relocation to instructions like `lw`, `sw`, and `.fill`
 - Outputs linked machine code (`.mc` file) for simulation
